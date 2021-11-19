@@ -332,7 +332,7 @@ public class OrdenesPreparadas extends javax.swing.JInternalFrame {
         int fila = tablaOrden.getSelectedRow();
 
         if (fila == -1) {
-            JOptionPane.showMessageDialog(null, "Seleccione una fila primero");
+            JOptionPane.showMessageDialog(null, "Seleccione una fila primero.");
         } else {
             int idOrden = Integer.parseInt(tablaOrden.getValueAt(fila, 0).toString());
             odao.actualizaEstado(idOrden, estado);
